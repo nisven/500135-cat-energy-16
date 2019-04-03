@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Артем Быков](https://up.htmlacademy.ru/adaptive/16/user/500135).
-* Наставник: `Неизвестно`.
+* Наставник: [Илья Туров](https://htmlacademy.ru/profile/turov).
 
 ---
 
