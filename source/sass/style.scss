@@ -1,0 +1,54 @@
+$white-three: #f2f2f2;
+$greyish-brown: #444444;
+$black-two: #111111;
+$leaf: #68b738;
+
+@import "header.scss";
+@import "nav.scss";
+@import "main.scss";
+@import "intro.scss";
+@import "catalog.scss";
+@import "hiw.scss";
+@import "example.scss";
+@import "location.scss";
+@import "footer.scss";
+
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldmedium.woff") format("woff"), url("../fonts/oswaldmedium.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff") format("woff"), url("../fonts/oswaldregular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.button {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #68b738;
+  text-transform: uppercase;
+}
