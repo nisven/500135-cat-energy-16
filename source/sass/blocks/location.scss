@@ -1,6 +1,8 @@
 .location {
   display: flex;
   flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .location__container {
@@ -33,5 +35,5 @@
 }
 
 .location__image {
-  margin-top: 10px;
+  margin: 10px auto 0;
 }

@@ -80,13 +80,30 @@
   &::before {
     content: "";
     display: block;
-    background: url("../img/icon-right-arrow-long.svg");
-    width: 25px;
+    background: url("../img/icon-right-arrow-long.svg") no-repeat 0% 50%;
+    width: 35px;
     height: 12px;
     position: absolute;
     top: 6px;
-    right: -35px;
+    right: -45px;
   }
+  &:hover,
+  &:focus {
+    &::before {
+      background: url("../img/icon-right-arrow-verylong.svg") no-repeat 50% 50%;
+      background-size: cover;
+    }
+    outline: none;
+  }
+  &:active {
+    &::before {
+      background: url("../img/icon-right-arrow-verylong.svg") no-repeat 50% 50%;
+      background-size: cover;
+    }
+    outline: none;
+    opacity: 0.3;
+  }
+
   position: relative;
   text-decoration: none;
   color: $black-two;

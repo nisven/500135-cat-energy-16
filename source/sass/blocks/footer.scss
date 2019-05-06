@@ -8,6 +8,16 @@
   margin: 35px 20px 0;
   padding-bottom: 31px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+    outline: none;
+  }
+  &:active {
+    opacity: 0.6;
+    outline: none;
+  }
 }
 
 .socials {
@@ -28,6 +38,9 @@
 }
 
 .copyright__text {
+  &:active {
+    opacity: 0.3;
+  }
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
@@ -35,4 +48,24 @@
   text-decoration: none;
   margin: 0;
   padding: 0;
+}
+
+.social-vk,
+.social-inst,
+.social-fb,
+.copyright__link {
+  &:hover,
+  &:focus {
+    svg {
+      fill: $leaf;
+    }
+    outline: none;
+  }
+
+  &:active {
+    svg {
+      fill: $leaf;
+    }
+    opacity: 0.3;
+  }
 }
