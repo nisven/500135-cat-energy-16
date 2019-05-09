@@ -1,15 +1,19 @@
 .header {
+  width: 100%;
+}
+
+.header__wrapper {
   display: flex;
   flex-direction: column;
+  max-width: $sm;
   align-items: flex-start;
   justify-content: center;
-  width: 100%;
+  padding: 11px 20px 0 20px;
 }
 
 .header__logo {
   display: block;
-  width: 191px;
-  margin: 11px 0 12px 6%;
+  margin-bottom: 12px;
 
   &:hover,
   &:focus {
@@ -18,7 +22,6 @@
   }
 
   &:active {
-    outline: none;
     opacity: 0.6;
   }
 }

@@ -1,6 +1,11 @@
 .example {
   background-color: $white-three;
-  padding: 30px 20px 20px;
+}
+
+.example__wrapper {
+  margin: 0 auto;
+  padding: 29px 20px 18px;
+  max-width: 500px;
 }
 
 .example__title {
@@ -24,7 +29,7 @@
 .example__infographics {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto 40px;
+  margin: 0 auto 39px;
   min-width: 244px;
   max-width: 300px;
 }
@@ -34,8 +39,8 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 122px;
-  height: 54px;
+  width: 123px;
+  height: 55px;
   border-radius: 3px;
   border: 1px solid #cdcdcd;
 }
@@ -82,7 +87,7 @@
 .example__switch {
   display: flex;
   justify-content: center;
-  margin: 20px auto 20px;
+  margin: 20px auto;
   font-size: 16px;
   line-height: 16px;
   color: $black-two;
@@ -93,10 +98,10 @@
 
 .example__switch-block {
   width: 82px;
-  margin: 0 20px;
+  margin: 0 19px;
 }
 
 .example__image {
   text-align: center;
-  margin: 0 auto 30px;
+  margin: 0 auto 36px;
 }

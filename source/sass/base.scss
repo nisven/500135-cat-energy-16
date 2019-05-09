@@ -21,18 +21,23 @@ html {
 }
 
 .page {
-  display: flex;
-  flex-direction: column;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
+  color: $black-two;
 }
 
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 40px;
+  margin: 0 auto;
   color: #ffffff;
   text-decoration: none;
-  background-color: #68b738;
   text-transform: uppercase;
+  background-color: #68b738;
 
   &:hover,
   &:focus {
@@ -49,7 +54,6 @@ html {
 .wrapper {
   width: 100%;
   min-width: 320px;
-  max-width: $sm;
   margin: 0 auto;
   position: relative;
 }

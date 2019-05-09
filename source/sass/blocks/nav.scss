@@ -1,18 +1,17 @@
 .nav {
   display: flex;
   width: 100%;
-  box-sizing: border-box;
 }
 
 .nav__toogle {
   display: block;
   position: absolute;
-  border: none;
-  width: 25px;
-  height: 19px;
-  padding: 0;
   top: 21px;
   right: 20px;
+  width: 25px;
+  height: 19px;
+  border: none;
+  padding: 0;
   background-image: url("data:image/svg+xml, %3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 24 18' style='background: none;' xml:space='preserve'%3E%3Crect y='16' width='24' height='2'/%3E%3Crect y='8' width='24' height='2'/%3E%3Crect width='24' height='2'/%3E%3C/svg%3E");
 }
 
@@ -21,12 +20,11 @@
 }
 
 .nav__list {
+  display: none;
   list-style: none;
   width: 100%;
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  display: none;
 }
 
 .nav__checkbox:checked ~ .nav__list {
@@ -35,11 +33,10 @@
 
 .nav__item {
   display: block;
-  margin: 0;
   width: 100%;
-  box-sizing: border-box;
-  border-bottom: 1px solid #e6e6e6;
+  margin: 0;
   padding: 24px;
+  border-bottom: 1px solid #e6e6e6;
   text-align: center;
 }
 
@@ -52,11 +49,11 @@
 
   &:hover,
   &:focus {
+    outline: none;
     opacity: 0.6;
   }
 
   &:active {
-    outline: none;
     opacity: 0.3;
   }
 }

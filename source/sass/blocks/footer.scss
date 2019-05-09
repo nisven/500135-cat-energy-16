@@ -2,11 +2,16 @@
   background-color: $white-three;
 }
 
+.footer__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 320px;
+}
+
 .footer__logo {
-  display: flex;
-  justify-content: center;
-  margin: 35px 20px 0;
-  padding-bottom: 31px;
+  display: block;
+  text-align: center;
+  padding: 39px 0 28px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
   &:hover,
@@ -14,9 +19,9 @@
     opacity: 0.8;
     outline: none;
   }
+
   &:active {
     opacity: 0.6;
-    outline: none;
   }
 }
 
@@ -25,16 +30,15 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 24px 82px 15px 71px;
-  margin: 0 20px;
+  padding: 23px 82px 15px 71px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .copyright {
-  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0;
 }
 
 .copyright__text {
