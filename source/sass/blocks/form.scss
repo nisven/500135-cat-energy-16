@@ -37,6 +37,10 @@
   padding: 0 19px;
 }
 
+.form__contact-list {
+  margin-bottom: 29px;
+}
+
 .form__main-item,
 .form__contact-item {
   vertical-align: middle;
@@ -166,4 +170,136 @@
 .form__contact-input--email:focus + .form__svg-email svg,
 .form__contact-input--tel:focus + .form__svg-tel svg {
   fill: $leaf;
+}
+
+.form__comment {
+  max-width: 400px;
+  text-align: center;
+  padding: 0 19px;
+  margin: 0 auto;
+}
+
+.form__comment-title {
+  max-width: 400px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0 auto 34px;
+  text-align: left;
+}
+
+.form__comment-text {
+  width: 100%;
+  height: 150px;
+  padding: 13px 12px 15px 15px;
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 18px;
+  color: $greyish-brown;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+  resize: none;
+  opacity: 0.5;
+
+  &:hover {
+    border-color: #cdcdcd;
+    opacity: 1;
+    outline: none;
+  }
+
+  &:focus {
+    border-color: $greyish-brown;
+    border-width: 2px;
+    opacity: 1;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.form__additional-title {
+  max-width: 400px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 0 19px;
+  margin: 0 auto 38px;
+}
+
+.form__additional-list {
+  list-style: none;
+  padding: 0 20px 3px;
+  margin: 0 auto 13px;
+  max-width: 400px;
+}
+
+.form__additional-item {
+  margin: 0 0 22px 46px;
+}
+
+.form__additional-label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $black;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -2px;
+    left: -46px;
+    border: 1px solid #cdcdcd;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      border-color: #bababa;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.form__additional-checkbox:checked + .form__additional-label {
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 19px;
+    height: 9px;
+    top: 7px;
+    left: -40px;
+    border-bottom: 2px solid $leaf;
+    border-left: 2px solid $leaf;
+    transform: rotate(-45deg);
+  }
+}
+
+.form__button {
+  display: block;
+  margin-bottom: 21px;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  border: none;
+}
+
+.form__necessarily {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  color: $greyish-brown;
+  margin-bottom: 32px;
 }
