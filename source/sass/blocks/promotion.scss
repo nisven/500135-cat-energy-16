@@ -1,0 +1,28 @@
+.promotion {
+  padding: 39px 20px 35px;
+}
+
+.wrapper.promotion__wrapper {
+  text-align: center;
+  margin: 0 auto;
+  min-width: 280px;
+  background: url("../img/gift-photo-mobile@1x.jpg");
+  width: 280px;
+  height: 289px;
+}
+
+.promotion__gift {
+  width: 55px;
+  height: 60px;
+  fill: #ffffff;
+  margin: 64px auto 59px;
+}
+
+.promotion__text {
+  width: 180px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  font-family: "Arial", sans-serif;
+  margin: 0 auto;
+}

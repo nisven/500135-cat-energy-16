@@ -1,0 +1,33 @@
+.intro {
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat center top;
+}
+
+.intro__wrapper {
+  max-width: $sm;
+  margin: 0 auto;
+}
+
+.intro__title {
+  font-size: 36px;
+  text-align: center;
+  color: #ffffff;
+  width: 320px;
+  font-weight: 400;
+  line-height: 36px;
+  margin: 0 auto 20px;
+  padding: 27px 0 0;
+}
+
+.intro__slogan {
+  text-align: center;
+  text-transform: uppercase;
+  width: 300px;
+  color: #ffffff;
+  margin: 0 auto 25px;
+}
+
+.intro__image {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}

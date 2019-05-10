@@ -1,0 +1,119 @@
+.catalog__wrapper {
+  max-width: 500px;
+  margin: 22px auto 0;
+  padding: 0 20px;
+}
+
+.catalog__list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog__item {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: $leaf;
+    border-radius: 50%;
+    top: 26px;
+    left: 23px;
+  }
+  background-color: $white-three;
+  margin: 0 auto 20px;
+  padding: 21px;
+  position: relative;
+}
+
+.catalog__title {
+  position: relative;
+  line-height: 37px;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 10px 0 10px 70px;
+  padding: 0;
+}
+
+.catalog__title--slim {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 50px;
+    top: -8px;
+    left: -62px;
+    background: url("../img/icon-cat-slim.svg") no-repeat center;
+  }
+}
+
+.catalog__title--pro {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 67px;
+    height: 28px;
+    top: 5px;
+    left: -78px;
+    background: url("../img/icon-cat-pro.svg") no-repeat center;
+  }
+}
+
+.catalog__text {
+  line-height: 18px;
+  font-size: 14px;
+  font-weight: 400;
+  color: $greyish-brown;
+  margin: 28px 13px 23px 0;
+  font-family: "Arial", sans-serif;
+}
+
+.catalog__line {
+  opacity: 0.1;
+  margin-bottom: 16px;
+}
+
+.catalog__link {
+  &::before {
+    content: "";
+    display: block;
+    background: url("../img/icon-right-arrow-long.svg") no-repeat 0% 50%;
+    width: 35px;
+    height: 12px;
+    position: absolute;
+    top: 6px;
+    right: -45px;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      background: url("../img/icon-right-arrow-verylong.svg") no-repeat 50% 50%;
+      background-size: cover;
+    }
+    outline: none;
+  }
+
+  &:active {
+    &::before {
+      background: url("../img/icon-right-arrow-verylong.svg") no-repeat 50% 50%;
+      background-size: cover;
+    }
+    outline: none;
+    opacity: 0.3;
+  }
+
+  position: relative;
+  text-decoration: none;
+  color: $black-two;
+  text-transform: uppercase;
+  line-height: 16px;
+  font-size: 16px;
+  font-weight: 400;
+}
