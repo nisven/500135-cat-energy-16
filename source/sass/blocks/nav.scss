@@ -99,3 +99,21 @@
     line-height: 25px;
   }
 }
+
+@media (min-width: $size-desktop) {
+  .nav__link {
+    font-size: 20px;
+  }
+
+  .nav {
+    width: 479px;
+  }
+
+  .nav__list--index .nav__link {
+    color: $white;
+  }
+
+  .nav__list--index .nav__link--active {
+    border-color: $white;
+  }
+}

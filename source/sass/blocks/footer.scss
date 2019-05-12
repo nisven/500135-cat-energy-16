@@ -138,3 +138,10 @@
     margin-left: 23px;
   }
 }
+
+@media (min-width: $size-desktop) {
+  .footer__wrapper {
+    max-width: 1500px;
+    padding: 53px 110px;
+  }
+}

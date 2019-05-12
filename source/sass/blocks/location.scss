@@ -99,3 +99,41 @@
     height: auto;
   }
 }
+
+@media (min-width: $size-desktop) {
+  .location__wrapper {
+    position: relative;
+  }
+
+  .location__container {
+    width: 570px;
+    height: 201px;
+    margin: 0;
+    position: absolute;
+    top: 95px;
+    left: 7.6%;
+    padding: 63px 84px 59px 76px;
+    align-items: center;
+  }
+
+  .location__text {
+    text-align: left;
+  }
+
+  .location__city {
+    display: inline-block;
+    padding-top: 20px;
+  }
+
+  .location__picture {
+    max-width: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .location__image {
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+}

@@ -25,3 +25,15 @@
     margin: -582px 0 0 0;
   }
 }
+
+@media (min-width: $size-desktop) {
+  .promo__wrapper {
+    margin: 0 auto 269px;
+    padding: 0;
+    max-width: 1063px;
+  }
+
+  .promo__button {
+    margin: -241px 0 0;
+  }
+}
