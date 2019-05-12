@@ -3,10 +3,25 @@
 }
 
 .promo__wrapper {
-  max-width: $sm;
   margin: 0 auto;
 }
 
 .promo__button {
   line-height: 14px;
+}
+
+
+@media (min-width: $size-tablet) {
+  .promo__wrapper {
+    max-width: 900px;
+    padding: 1px 40px 0 117px;
+  }
+
+  .promo__button {
+    font-size: 20px;
+    line-height: 20px;
+    width: 245px;
+    height: 52px;
+    margin: -582px 0 0 0;
+  }
 }

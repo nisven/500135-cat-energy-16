@@ -5,7 +5,6 @@
 .wrapper.promotion__wrapper {
   text-align: center;
   margin: 0 auto;
-  min-width: 280px;
   background: url("../img/gift-photo-mobile@1x.jpg");
   width: 280px;
   height: 289px;
@@ -25,4 +24,34 @@
   color: #ffffff;
   font-family: "Arial", sans-serif;
   margin: 0 auto;
+}
+
+@media (min-width: $size-tablet) {
+  .promotion {
+    padding: 0;
+  }
+
+  .wrapper.promotion__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 76px;
+    padding: 17px 105px 10px 90px;
+    background: url("../img/gift-photo-tablet@1x.jpg");
+    width: 708px;
+    height: 200px;
+  }
+
+  .promotion__gift {
+    display: block;
+    width: 56px;
+    height: 61px;
+    margin: -13px 0 0;
+  }
+
+  .promotion__text {
+    width: 180px;
+    text-align: left;
+    margin: 0;
+  }
 }

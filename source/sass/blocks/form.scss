@@ -25,8 +25,8 @@
   text-transform: uppercase;
 }
 
-.form__main-list,
-.form__contact-list {
+.form__contact-list,
+.form__main-list {
   list-style: none;
   max-width: 400px;
   margin: 0 auto 23px;
@@ -41,8 +41,8 @@
   margin-bottom: 29px;
 }
 
-.form__main-item,
-.form__contact-item {
+.form__contact-item,
+.form__main-item {
   vertical-align: middle;
   display: flex;
   align-items: center;
@@ -54,8 +54,8 @@
   margin-right: 15px;
 }
 
-.form__main-input,
-.form__contact-input {
+.form__contact-input,
+.form__main-input {
   padding-left: 15px;
   height: 45px;
   text-transform: uppercase;
@@ -109,8 +109,8 @@
     border: 1px solid #cdcdcd;
   }
 
-  &:hover,
-  &:focus {
+  &:focus,
+  &:hover {
     &::before {
       border-color: #bababa;
     }
@@ -135,6 +135,21 @@
   }
 }
 
+.form__title-line {
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: $leaf;
+    top: 14px;
+    left: 0;
+    overflow-x: hidden;
+    z-index: 1;
+  }
+}
+
 .form__contact-title {
   padding: 0 20px;
   max-width: 400px;
@@ -143,6 +158,20 @@
   font-weight: 400;
   margin: 0 auto 33px;
   position: relative;
+}
+
+.form__title-text {
+  display: inline-block;
+  width: auto;
+  padding: 0 20px;
+  margin-left: -20px;
+  background-color: white;
+  position: relative;
+  z-index: 3;
+}
+
+.form__contact-title .form__title-text {
+  width: 225px;
 }
 
 .form__contact-label {
@@ -167,16 +196,16 @@
   width: 20px;
 }
 
-.form__contact-input--email:focus + .form__svg-email svg,
-.form__contact-input--tel:focus + .form__svg-tel svg {
+.form__contact-input--email:focus + .form__svg-email,
+.form__contact-input--tel:focus + .form__svg-tel {
   fill: $leaf;
 }
 
 .form__comment {
   max-width: 400px;
   text-align: center;
-  padding: 0 19px;
   margin: 0 auto;
+  padding: 0 19px;
 }
 
 .form__comment-title {
@@ -184,15 +213,17 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  margin: 0 auto 34px;
+  margin: 0 -20px 34px;
   text-align: left;
+  position: relative;
+  padding: 0 19px;
 }
 
 .form__comment-text {
   width: 100%;
   height: 150px;
   padding: 13px 12px 15px 15px;
-  margin-bottom: 25px;
+  margin: 0 auto 25px;
   font-size: 16px;
   line-height: 18px;
   color: $greyish-brown;
@@ -227,6 +258,7 @@
   font-weight: 400;
   padding: 0 19px;
   margin: 0 auto 38px;
+  position: relative;
 }
 
 .form__additional-list {
@@ -258,8 +290,8 @@
     border: 1px solid #cdcdcd;
   }
 
-  &:hover,
-  &:focus {
+  &:focus,
+  &:hover {
     &::before {
       border-color: #bababa;
     }
@@ -302,4 +334,228 @@
   font-family: "Arial", sans-serif;
   color: $greyish-brown;
   margin-bottom: 32px;
+}
+
+@media (min-width: $size-tablet) {
+  .form {
+    border-top: none;
+  }
+
+  .form__wrapper {
+    max-width: 800px;
+  }
+
+  .form__title {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    width: 480px;
+    padding: 0 0 0 30px;
+    margin: 30px 0 55px;
+  }
+
+  .form__text {
+    max-width: 400px;
+    margin: 0 0 65px;
+    padding: 0 0 0 70px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__contact-list,
+  .form__main-list {
+    max-width: 800px;
+    margin: 0 auto 73px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0 68px 0 71px;
+  }
+
+  .form__contact-list {
+    margin-bottom: 67px;
+    padding-right: 66px;
+  }
+
+  .form__contact-item,
+  .form__main-item {
+    margin-bottom: 20px;
+  }
+
+  .form__contact-input,
+  .form__main-input {
+    padding-left: 20px;
+    height: 52px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .form__wherefore-list {
+    border: 1px solid #e6e6e6;
+    padding: 24px 27px 8px;
+    margin: 0 67px 77px 71px;
+    max-width: 800px;
+  }
+
+  .form__wherefore-item {
+    margin: 0 0 22px 46px;
+    padding: 9px 5px 0 13px;
+  }
+
+  .form__wherefore-label {
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+      top: -5px;
+      left: -59px;
+      border: 1px solid #cdcdcd;
+    }
+  }
+
+  .form__wherefore-radio:checked + .form__wherefore-label {
+    &::after {
+      width: 18px;
+      height: 18px;
+      top: 7px;
+      left: -48px;
+    }
+  }
+
+  .form__title-line {
+    &::after {
+      top: 20px;
+      left: 0;
+    }
+  }
+
+  .form__contact-title {
+    padding: 0 20px;
+    max-width: 800px;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 auto 73px;
+  }
+
+  .form__contact-label {
+    margin-left: -1.5px;
+    margin-right: 17px;
+  }
+
+  .form__title-text {
+    padding: 0 43px 0 38px;
+    margin-left: 10px;
+  }
+
+  .form__contact-title .form__title-text {
+    width: auto;
+  }
+
+  .form__contact-input {
+    padding-right: 40px;
+  }
+
+  .form__svg-email {
+    top: 21px;
+    right: 20px;
+    width: 18px;
+    height: 14px;
+  }
+
+  .form__svg-tel {
+    top: 18px;
+    right: 17px;
+    width: 21px;
+    height: 21px;
+  }
+
+  .form__comment {
+    max-width: 800px;
+    padding: 0 67px 0 70px;
+  }
+
+  .form__comment-title {
+    max-width: 800px;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 -67px 75px -70px;
+  }
+
+  .form__comment-text {
+    height: 174px;
+    padding: 9px 12px 15px 18px;
+    margin: 0 auto 62px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__additional-title {
+    max-width: 800px;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 auto 57px;
+  }
+
+  .form__additional-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 10px 3px 70px;
+    margin: 0 auto 16px;
+    max-width: 800px;
+  }
+
+  .form__additional-item {
+    width: 50%;
+    padding: 8px 0 22px 58px;
+    margin: 0 0 20px;
+  }
+
+  .form__additional-label {
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+      top: -4px;
+      left: -58px;
+    }
+  }
+
+  .form__additional-checkbox:checked + .form__additional-label {
+    &::after {
+      width: 19px;
+      height: 9px;
+      top: 10px;
+      left: -46px;
+    }
+  }
+
+  .form__sabmit-block {
+    display: flex;
+    max-width: 800px;
+    padding: 0 71px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 72px;
+  }
+
+  .form__button {
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    height: 52px;
+    width: 281px;
+  }
+
+  .form__necessarily {
+    display: inline-block;
+    width: 45%;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: left;
+    margin-bottom: 0;
+  }
 }

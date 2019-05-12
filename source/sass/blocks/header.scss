@@ -5,18 +5,17 @@
 .header__wrapper {
   display: flex;
   flex-direction: column;
-  max-width: $sm;
   align-items: flex-start;
   justify-content: center;
-  padding: 11px 20px 0 20px;
+  padding: 11px 20px 0;
 }
 
 .header__logo {
   display: block;
   margin-bottom: 12px;
 
-  &:hover,
-  &:focus {
+  &:focus,
+  &:hover {
     opacity: 0.8;
     outline: none;
   }
@@ -26,13 +25,28 @@
   }
 }
 
-@media (min-width: $sm) {
+.header__logo-image {
+  width: 191px;
+  height: auto;
+  margin: -1px 0 6px;
+}
+
+@media (min-width: $size-tablet) {
   .header__wrapper {
     display: flex;
     flex-direction: row;
-    max-width: $sm;
     align-items: center;
     justify-content: space-between;
     padding: 24px 30px;
+    max-width: 900px;
+  }
+
+  .header__logo {
+    margin: 0;
+  }
+
+  .header__logo-image {
+    width: 174px;
+    height: auto;
   }
 }

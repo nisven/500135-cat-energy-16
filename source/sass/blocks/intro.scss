@@ -3,7 +3,6 @@
 }
 
 .intro__wrapper {
-  max-width: $sm;
   margin: 0 auto;
 }
 
@@ -30,4 +29,41 @@
   display: block;
   margin: 0 auto;
   margin-bottom: 5px;
+  width: 280px;
+  height: auto;
+}
+
+@media (min-width: $size-tablet) {
+  .intro {
+    background: none;
+  }
+
+  .intro__wrapper {
+    max-width: 900px;
+    padding: 30px 0 0 0;
+  }
+
+  .intro__title {
+    color: $black-two;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    width: 420px;
+    margin: 0 0 41px 117px;
+    padding: 0;
+  }
+
+  .intro__slogan {
+    color: $black-two;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    margin: 0 0 0 117px;
+  }
+
+  .intro__image {
+    width: 709px;
+    height: auto;
+    margin: 20px auto 0;
+  }
 }

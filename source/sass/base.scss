@@ -4,6 +4,10 @@ html {
   padding: 0;
 }
 
+picture img {
+  display: block;
+}
+
 *,
 *::before,
 *::after {
@@ -34,20 +38,20 @@ html {
   width: 280px;
   height: 40px;
   margin: 0 auto;
-  color: #ffffff;
+  color: $white;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: #68b738;
+  background-color: $leaf;
 
   &:hover,
   &:focus {
     outline: none;
-    background-color: #5eaa2f;
+    background-color: $grass;
   }
 
   &:active {
-    background-color: #5eaa2f;
-    color: rgba(256, 256, 256, 0.3);
+    background-color: $grass;
+    color: $white-30;
   }
 }
 
