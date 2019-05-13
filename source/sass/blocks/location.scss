@@ -1,3 +1,7 @@
+.location {
+  background-color: $white;
+}
+
 .location__wrapper {
   max-width: 400px;
   margin: 0 auto;
@@ -7,7 +11,10 @@
 
 .location__container {
   display: flex;
+  background-color: $white;
   flex-direction: row;
+  position: relative;
+  z-index: 3;
 }
 
 .location__title {
@@ -33,9 +40,100 @@
 }
 
 .location__image {
-  margin: 5px auto 0;
+  margin: -32px auto 0;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: auto;
 }
 
-.location--catalog {
+.location--catalog,
+.location--form,
+.location--catalog .location__container,
+.location--form .location__container {
   background-color: $white-three;
+}
+
+@media (min-width: $size-tablet) {
+  .location__wrapper {
+    max-width: none;
+    margin: 0 auto;
+  }
+
+  .location__container {
+    width: $size-tablet;
+    margin: 0 auto;
+    padding: 63px 71px 55px;
+    justify-content: space-between;
+  }
+
+  .location__title {
+    padding: 2px 0 0;
+    font-size: 20px;
+    line-height: 25px;
+    width: 160px;
+  }
+
+  .location__text {
+    padding: 0 1px 0 0;
+    width: 160px;
+    text-align: right;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .location__city {
+    display: inline-block;
+    padding-top: 20px;
+  }
+
+  .location__picture {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .location__image {
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: $size-desktop) {
+  .location__wrapper {
+    position: relative;
+  }
+
+  .location__container {
+    width: 570px;
+    height: 201px;
+    margin: 0;
+    position: absolute;
+    top: 95px;
+    left: 7.6%;
+    padding: 63px 84px 59px 76px;
+    align-items: center;
+  }
+
+  .location__text {
+    text-align: left;
+  }
+
+  .location__city {
+    display: inline-block;
+    padding-top: 20px;
+  }
+
+  .location__picture {
+    max-width: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .location__image {
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
 }

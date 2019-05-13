@@ -19,13 +19,6 @@
 }
 
 .hiw__item {
-  position: relative;
-  min-height: 60px;
-  margin: 0 0 20px 60px;
-  padding: 0 0 0 20px;
-}
-
-.hiw__text {
   &::before {
     content: "";
     display: block;
@@ -36,7 +29,15 @@
     position: absolute;
     background-color: $leaf;
     background-position: center;
+    background-repeat: no-repeat;
   }
+  position: relative;
+  min-height: 60px;
+  margin: 0 0 20px 60px;
+  padding: 0 0 0 20px;
+}
+
+.hiw__text {
   padding: 0;
   margin: 0;
   font-family: "Arial", sans-serif;
@@ -46,18 +47,160 @@
   color: #444444;
 }
 
-.hiw__text--benefit::before {
+.hiw__item--benefit::before {
   background-image: url("../img/advantage-leaf@1x.png");
 }
 
-.hiw__text--liquid::before {
+.hiw__item--liquid::before {
   background-image: url("../img/advantage-powder@1x.png");
 }
 
-.hiw__text--cutlery::before {
+.hiw__item--cutlery::before {
   background-image: url("../img/advantage-dining@1x.png");
 }
 
-.hiw__text--clock::before {
+.hiw__item--clock::before {
   background-image: url("../img/advantage-clock@1x.png");
+}
+
+@media (min-width: $size-tablet) {
+  .hiw__wrapper {
+    max-width: 900px;
+    padding: 0 30px;
+  }
+
+  .hiw__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 66px;
+  }
+
+  .hiw__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .hiw__item {
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      font-size: 281px;
+      line-height: 281px;
+      color: $white-three;
+      font-family: "Oswald", "Arial", sans-serif;
+      top: -33px;
+      right: 124px;
+      z-index: 1;
+    }
+
+    &::before {
+      top: 6px;
+      left: 0;
+      width: 80px;
+      height: 80px;
+    }
+    position: relative;
+    width: 50%;
+    margin: 0;
+    padding: 118px 150px 50px 0;
+    margin-bottom: 77px;
+  }
+
+  .hiw__item:nth-child(2n) {
+    &::before {
+      top: 6px;
+      left: 30px;
+    }
+    padding: 118px 75px 50px 30px;
+  }
+
+  .hiw__text {
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    z-index: 3;
+  }
+
+  .hiw__item--benefit::after {
+    content: "1";
+  }
+
+  .hiw__item--liquid::after {
+    content: "2";
+    right: 80px;
+  }
+
+  .hiw__item--cutlery::after {
+    content: "3";
+    right: 107px;
+  }
+
+  .hiw__item--clock::after {
+    content: "4";
+    width: 87px;
+  }
+}
+
+@media (min-width: $size-desktop) {
+  .hiw__wrapper {
+    max-width: 1500px;
+    padding: 0 110px;
+  }
+
+  .hiw__item:nth-child(2n) {
+    &::before {
+      left: 0;
+    }
+
+    padding: 118px 0 50px 0;
+  }
+
+  .hiw__item {
+    &::after {
+      top: -33px;
+      right: 124px;
+    }
+
+    &::before {
+      top: 6px;
+      left: 0;
+      width: 80px;
+      height: 80px;
+    }
+
+    width: 246px;
+    margin: 0;
+    padding: 118px 0 50px 0;
+    margin-bottom: 77px;
+  }
+
+  .hiw__text {
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    z-index: 3;
+  }
+
+  .hiw__item--benefit::after {
+    content: "1";
+    right: 17px;
+  }
+
+  .hiw__item--liquid::after {
+    content: "2";
+    right: 0;
+  }
+
+  .hiw__item--cutlery::after {
+    content: "3";
+    right: 0;
+  }
+
+  .hiw__item--clock::after {
+    content: "4";
+    right: 45px;
+    width: 87px;
+  }
 }
