@@ -135,6 +135,16 @@
   }
 }
 
+.form__wherefore-radio:focus + .form__wherefore-label {
+  &::after {
+    background: orange;
+  }
+
+  &::before {
+    border-color: $very-dark-brown;
+  }
+}
+
 .form__title-line {
   &::after {
     content: "";
@@ -317,6 +327,16 @@
   }
 }
 
+.form__additional-checkbox:focus + .form__additional-label {
+  &::after {
+    border-color: orange;
+  }
+
+  &::before {
+    border-color: $very-dark-brown;
+  }
+}
+
 .form__button {
   display: block;
   margin-bottom: 21px;
@@ -334,6 +354,21 @@
   font-family: "Arial", sans-serif;
   color: $greyish-brown;
   margin-bottom: 32px;
+}
+
+.form__main-input:invalid {
+  border-color: #ff8282;
+  border-width: 2px;
+}
+
+.form__contact-input:invalid {
+  border-color: #ff8282;
+  border-width: 2px;
+}
+
+.form__contact-input:invalid + .form__svg-email,
+.form__contact-input:invalid + .form__svg-tel {
+  fill: #ff8282;
 }
 
 @media (min-width: $size-tablet) {
