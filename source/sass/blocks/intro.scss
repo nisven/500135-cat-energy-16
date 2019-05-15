@@ -1,5 +1,10 @@
 .intro {
   background: url("../img/index-background-mobile@1x.jpg") no-repeat center top;
+  background-size: contain;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .intro__wrapper {
@@ -72,12 +77,16 @@
   .intro {
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: contain;
     background-position: right top;
     margin: -118px auto 0;
     padding-top: 118px;
     height: 696px;
     max-width: 1600px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 
   .intro__wrapper {

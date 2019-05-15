@@ -39,9 +39,9 @@
           <p class="intro__slogan">Занялся собой? Займись котом!</p>
         </div>
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png">
-          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
-          <img class="intro__image" src="img/index-can-mobile@1x.png" alt="Упаковка Кэт энержи" width="280" height="270">
+          <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+          <img class="intro__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Упаковка Кэт энержи" width="280" height="270">
         </picture>
       </div>
     </section>
@@ -109,9 +109,21 @@
           </div>
         </div>
         <div class="example__part2">
-          <div class="example__image">
-            <img src="img/before-desktop@1x.png" alt="Толстый кот" width="311" height="232" class="example__before-cat">
-            <img src="img/after-desktop@1x.png" alt="Худой кот" width="311" height="232" class="example__after-cat example__image-invisible">
+          <div class="example__images-block">
+            <div class="example__img-before">
+              <picture>
+                <source media="(min-width:1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                <source media="(min-width:768px)" srcset="img/before-tablet@1x.png 1x, img/before-desktop@2x.png 2x">
+                <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Толстый кот" width="311" height="232" class="example__before-cat">
+              </picture>
+            </div>
+            <div class="example__img-after">
+              <picture>
+                <source media="(min-width:1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                <source media="(min-width:768px)" srcset="img/after-tablet@1x.png 1x, img/after-desktop@2x.png 2x">
+                <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Худой кот" width="311" height="232" class="example__after-cat example__image-invisible">
+              </picture>
+            </div>
           </div>
           <div class="example__switch">
             <p class="example__before-text">Было</p>
