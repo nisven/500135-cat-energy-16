@@ -79,19 +79,37 @@
 
 .example__switch {
   display: flex;
-  justify-content: center;
-  margin: 20px auto;
+  margin: 0 auto 19px;
+  width: 210px;
   font-size: 16px;
   line-height: 16px;
   color: $black-two;
   text-transform: uppercase;
   position: relative;
   z-index: 3;
+  padding: 0 4px 2px 8px;
 }
 
 .example__switch-block {
-  width: 82px;
-  margin: 0 19px;
+  width: 84px;
+  height: 14px;
+  margin: 0 18px 0 19px;
+  border: 1px $pinjish-grey-two solid;
+  border-radius: 6px;
+  background-color: $white;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: $leaf;
+    top: 3px;
+    left: 5px;
+  }
 }
 
 .example__part2 {
@@ -159,7 +177,7 @@
     max-width: 900px;
     margin: -25px auto 0;
     border-top: 1px solid #e6e6e6;
-    padding: 43px 31px 55px 30px;
+    padding: 43px 31px 44px 30px;
   }
 
   .example__title {
@@ -214,47 +232,70 @@
     top: 62px;
   }
 
-  // .example__image {
-  //   margin-bottom: 27px;
-  // }
-  //
-  // .example__before-cat {
-  //   width: 338px * 2;
-  //   height: auto;
-  //   margin-left: 15px;
-  // }
-
   .example__switch {
-    max-width: 700px;
-    margin-bottom: 20px;
+    width: 600px;
+    align-items: center;
+    padding: 0 0 0 14px;
+    margin-bottom: 25px;
   }
 
   .example__switch-block {
     width: 428px;
-    margin: 0 22px;
-  }
+    height: 6px;
+    background-color: $pinjish-grey-two;
+    border-radius: 2.5px;
+    margin: -5px 22px 0 25px;
 
+    &::before {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $leaf;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 3;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      border: 1px solid $pinjish-grey-two;
+      background-color: $white;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+  }
 
   .example__before-text,
   .example__after-text {
     font-size: 20px;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.23);
+    padding-bottom: 9px;
   }
 
   .example__images-block {
-    width: 338px + 298px;
+    width: 636px;
     height: 517px;
+    margin-bottom: 37px;
   }
 
   .example__before-cat {
     width: auto;
     height: 100%;
-    margin: 10px -329px 0 0;
+    margin: 18px -330px 0 0;
   }
 
   .example__after-cat {
     width: auto;
     height: 100%;
-    margin: 16px 0 0 -304px;
+    margin: 17px 0 0 -304px;
   }
 
   .example__img-after,
@@ -271,16 +312,16 @@
 
   .example__img-before {
     width: 50%;
-    height: 499px;
+    height: 517px;
   }
 }
 
 @media (min-width: $size-desktop) {
   .example__wrapper {
-    max-width: 1500px;
+    max-width: 1440px;
     margin: -49px auto 0;
     border-top: none;
-    padding: 0 110px 70px;
+    padding: 0 110px 68px;
     display: flex;
     justify-content: space-between;
   }
@@ -331,59 +372,34 @@
     background-color: #eaeaea;
   }
 
-  // .example__image {
-  //   margin: -4px -61px 53px 0;
-  // }
-  //
-  // .example__before-cat {
-  //   width: 730px;
-  //   height: 499px;
-  //   margin: 0;
-  // }
-
   .example__switch {
-    justify-content: flex-end;
-    max-width: none;
-    margin-bottom: 0;
+    margin: 0 0 0 auto;
+    padding-left: 30px;
   }
 
   .example__switch-block {
-    width: 428px;
-    margin: 0 22px;
+    margin: -8px 21px 0 24px;
   }
 
   .example__images-block {
-    width: 653px;
-    height: 517px;
-    margin-bottom: 36px;
+    width: 730px;
+    height: 552px;
+    margin-bottom: 40px;
+    margin-top: -40px;
+    margin-right: -80px;
+    align-items: flex-end;
   }
 
   .example__before-cat {
-    width: auto;
-    height: 100%;
-    margin: -8px -311px 0 0;
+    margin: -1px -325px 0 0;
   }
 
   .example__after-cat {
-    width: auto;
-    height: 100%;
-    margin: -8px 0 0 -311px;
+    margin: 0 0 0 -406px;
   }
 
-  .example__img-after,
-  .example__img-before {
-    flex-grow: 0;
-    overflow: hidden;
-  }
-
-  .example__img-after {
-    display: flex;
-    width: 271px;
-    height: 517px;
-  }
-
-  .example__img-before {
-    width: 356px;
-    height: 517px;
+  .example__before-text,
+  .example__after-text {
+    padding-bottom: 8px;
   }
 }

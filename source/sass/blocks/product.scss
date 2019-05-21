@@ -239,3 +239,55 @@
     margin: 0 auto 85px;
   }
 }
+
+@media (min-width: $size-desktop) {
+  .product__wrapper {
+    max-width: 1440px;
+    margin-bottom: 56px;
+  }
+
+  .product__title {
+    padding: 70px 0 10px;
+    margin: 0 0 15px 110px;
+  }
+
+  .product__list {
+    max-width: none;
+    margin: 0 70px 46px;
+    padding: 0;
+  }
+
+  .product__item:first-child {
+    margin-top: 0;
+    border: none;
+  }
+
+  .product__item {
+    width: 245px;
+    margin: 141px 40px 0;
+    padding: 160px 37px 40px 39px;
+  }
+
+  .product__button {
+    width: 100%;
+  }
+
+  .product__description {
+    padding-top: 2px;
+    width: 100%;
+  }
+
+  .product__show {
+    height: 432px;
+    margin: 0 auto;
+    padding: 53px 37px 40px 38px;
+  }
+
+  .product__show-title {
+    padding: 0;
+  }
+
+  .product__show-text {
+    padding: 0;
+  }
+}

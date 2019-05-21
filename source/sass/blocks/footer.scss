@@ -1,7 +1,7 @@
 .footer {
   background-color: $white-three;
   margin-top: -5px;
-  padding-top: 10px;
+  padding-top: 3px;
 }
 
 .footer__wrapper {
@@ -32,7 +32,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 23px 82px 15px 71px;
+  padding: 23px 82px 17px 71px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -92,13 +92,17 @@
 }
 
 @media (min-width: $size-tablet) {
+  .footer {
+    padding-top: 10px;
+  }
+
   .footer__wrapper {
     max-width: 900px;
     width: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 53px 30px;
+    padding: 50px 30px 55px;
   }
 
   .footer__logo {
@@ -141,7 +145,7 @@
 
 @media (min-width: $size-desktop) {
   .footer__wrapper {
-    max-width: 1500px;
+    max-width: 1440px;
     padding: 53px 110px;
   }
 }
