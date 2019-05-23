@@ -106,7 +106,7 @@
     top: -2px;
     left: -46px;
     border-radius: 50%;
-    border: 1px solid $pinjish-grey-two;
+    border: 1px solid $grey-two;
   }
 
   &:focus,
@@ -239,12 +239,12 @@
   color: $greyish-brown;
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
-  border: 1px solid $pinjish-grey-two;
+  border: 1px solid $grey-two;
   resize: none;
   opacity: 0.5;
 
   &:hover {
-    border-color: $pinjish-grey-two;
+    border-color: $grey-two;
     opacity: 1;
     outline: none;
   }
@@ -297,7 +297,7 @@
     height: 30px;
     top: -2px;
     left: -46px;
-    border: 1px solid $pinjish-grey-two;
+    border: 1px solid $grey-two;
   }
 
   &:focus,
@@ -445,7 +445,7 @@
       height: 40px;
       top: -5px;
       left: -59px;
-      border: 1px solid $pinjish-grey-two;
+      border: 1px solid $grey-two;
     }
   }
 
@@ -622,6 +622,7 @@
   .form__main-list {
     margin: 0;
     padding: 0;
+    width: 570px;
   }
 
   .form__wherefore-list {
@@ -666,6 +667,10 @@
     padding: 9px 12px 15px 18px;
     margin: 0 0 64px;
     width: 1220px;
+  }
+
+  .form__comment-title {
+    max-width: 1440px;
   }
 
   .form__additional-title {

@@ -67,6 +67,8 @@
   font-weight: normal;
   color: $greyish-brown;
   background-color: $white-three;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .example__expenses {
@@ -94,7 +96,7 @@
   width: 84px;
   height: 14px;
   margin: 0 18px 0 19px;
-  border: 1px $pinjish-grey-two solid;
+  border: 1px $grey-two solid;
   border-radius: 6px;
   background-color: $white;
   position: relative;
@@ -234,7 +236,7 @@
   .example__switch-block {
     width: 428px;
     height: 6px;
-    background-color: $pinjish-grey-two;
+    background-color: $grey-two;
     border-radius: 2.5px;
     margin: -5px 22px 0 25px;
 
@@ -256,7 +258,7 @@
       width: 34px;
       height: 34px;
       border-radius: 50%;
-      border: 1px solid $pinjish-grey-two;
+      border: 1px solid $grey-two;
       background-color: $white;
       top: 50%;
       left: 50%;
@@ -362,6 +364,7 @@
 
   .example__infographics-text {
     background-color: $bg-example;
+    white-space: nowrap;
   }
 
   .example__switch {

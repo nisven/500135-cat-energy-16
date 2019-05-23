@@ -72,7 +72,7 @@
 
   .wrapper.promotion__wrapper {
     flex-direction: column;
-    background-image: url("../img/gift-photo-desktop@1x.jpg") no-repeat;
+    background: url("../img/gift-photo-desktop@1x.jpg") no-repeat;
     margin: 0;
     padding: 65px 43px 43px;
     min-width: 245px;
@@ -80,7 +80,7 @@
     height: 289px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background: url("../img/gift-photo-desktop@2x.jpg");
     }
   }
 
