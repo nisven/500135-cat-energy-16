@@ -8,7 +8,6 @@
   background: url("../img/gift-photo-mobile@1x.jpg");
   background-size: contain;
   min-width: 280px;
-
   height: 289px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -19,7 +18,7 @@
 .promotion__gift {
   width: 55px;
   height: 60px;
-  fill: #ffffff;
+  fill: $white;
   margin: 64px auto 59px;
 }
 
@@ -27,7 +26,7 @@
   width: 180px;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
+  color: $white;
   font-family: "Arial", sans-serif;
   margin: 0 auto;
 }

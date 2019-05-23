@@ -14,7 +14,7 @@
   display: block;
   text-align: center;
   padding: 39px 0 28px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid $black-10;
 
   &:hover,
   &:focus {
@@ -33,7 +33,7 @@
   justify-content: space-between;
   align-items: flex-start;
   padding: 23px 82px 17px 71px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid $black-10;
 }
 
 .copyright {
@@ -44,16 +44,17 @@
 }
 
 .copyright__text {
-  &:active {
-    opacity: 0.3;
-  }
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
-  color: #444444;
+  color: $greyish-brown;
   text-decoration: none;
   margin: 0;
   padding: 0;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social-vk,

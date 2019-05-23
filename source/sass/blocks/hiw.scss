@@ -14,11 +14,16 @@
 
 .hiw__list {
   list-style: none;
-  margin: 40px 0 0 0;
+  margin: 40px 0 0;
   padding: 0;
 }
 
 .hiw__item {
+  position: relative;
+  min-height: 60px;
+  margin: 0 0 20px 60px;
+  padding: 0 0 0 20px;
+
   &::before {
     content: "";
     display: block;
@@ -32,10 +37,6 @@
     background-repeat: no-repeat;
     background-size: 50px 50px;
   }
-  position: relative;
-  min-height: 60px;
-  margin: 0 0 20px 60px;
-  padding: 0 0 0 20px;
 }
 
 .hiw__text {
@@ -45,7 +46,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $greyish-brown;
 }
 
 .hiw__item--benefit::before {
@@ -99,6 +100,12 @@
   }
 
   .hiw__item {
+    position: relative;
+    width: 50%;
+    margin: 0;
+    padding: 118px 150px 50px 0;
+    margin-bottom: 77px;
+
     &::after {
       content: "";
       display: block;
@@ -118,19 +125,15 @@
       width: 80px;
       height: 80px;
     }
-    position: relative;
-    width: 50%;
-    margin: 0;
-    padding: 118px 150px 50px 0;
-    margin-bottom: 77px;
   }
 
   .hiw__item:nth-child(2n) {
+    padding: 118px 75px 50px 30px;
+
     &::before {
       top: 6px;
       left: 30px;
     }
-    padding: 118px 75px 50px 30px;
   }
 
   .hiw__text {
@@ -167,14 +170,19 @@
   }
 
   .hiw__item:nth-child(2n) {
+    padding: 118px 0 50px;
+
     &::before {
       left: 0;
     }
-
-    padding: 118px 0 50px 0;
   }
 
   .hiw__item {
+    width: 246px;
+    margin: 0;
+    padding: 118px 0 50px;
+    margin-bottom: 77px;
+
     &::after {
       top: -33px;
       right: 124px;
@@ -186,11 +194,6 @@
       width: 80px;
       height: 80px;
     }
-
-    width: 246px;
-    margin: 0;
-    padding: 118px 0 50px 0;
-    margin-bottom: 77px;
   }
 
   .hiw__text {
